@@ -1,7 +1,10 @@
 # #100DaysOfCode
 
 **Start:** 12/29/20
+
 **End** TBD
+
+I'm hoping to start with 30 Days of Javascript while saving some time to work on a backlog of other projects, as well as D3 and machine learning with FreeCodeCamp and Python.
 
 ## Log
 
