@@ -2,7 +2,7 @@
 
 **Start:** 12/29/20
 
-**End** TBD
+**End:** TBD
 
 I'm hoping to start with 30 Days of Javascript while saving some time to work on a backlog of other projects, as well as D3 and machine learning with FreeCodeCamp and Python.
 
@@ -10,7 +10,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 
 | Day | Date | Description | Language(s) | Link |
 |-----|------|-------------|-------------|------|
-| 1   |      |             |             |      |
+| 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
 | 2   |      |             |             |      |
 | 3   |      |             |             |      |
 | 4   |      |             |             |      |
@@ -110,3 +110,18 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 98  |      |             |             |      |
 | 99  |      |             |             |      |
 | 100 |      |             |             |      |
+
+
+## Notes
+
+### Day 1
+
+**Focus:** JavaScript 30's JS Drum Kit
+**Enthusiasm:** 🤓
+
+Head-first dive into JavaScript interacting with HTML. Glad that I have a good background in js/coding! This would not be ideal as a first project but I'm excited to do more.
+
+**Goals for the future:**
+
+* Bigger JS projects (like useful webapps!)
+* More interactivity to existing webpages and web design
