@@ -125,3 +125,4 @@ Head-first dive into JavaScript interacting with HTML. Glad that I have a good b
 
 * Bigger JS projects (like useful webapps!)
 * More interactivity to existing webpages and web design
+* Add a stylized learning page to [my portfolio](estaudere.github.com)
