@@ -11,7 +11,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | Day | Date | Description | Language(s) | Link |
 |-----|------|-------------|-------------|------|
 | 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
-| 2   |      |             |             |      |
+| 2   | 12.30.20 | infovis | none | [course](#day-2) |
 | 3   |      |             |             |      |
 | 4   |      |             |             |      |
 | 5   |      |             |             |      |
@@ -117,6 +117,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 ### Day 1
 
 **Focus:** JavaScript 30's JS Drum Kit
+
 **Enthusiasm:** 🤓
 
 Head-first dive into JavaScript interacting with HTML. Glad that I have a good background in js/coding! This would not be ideal as a first project but I'm excited to do more.
@@ -126,3 +127,18 @@ Head-first dive into JavaScript interacting with HTML. Glad that I have a good b
 * Bigger JS projects (like useful webapps!)
 * More interactivity to existing webpages and web design
 * Add a stylized learning page to [my portfolio](estaudere.github.com)
+
+### Day 2
+
+**Focus:** Enrico Bertolli's [InfoViz Coursera Course](https://www.coursera.org/learn/information-visualization-fundamentals/home/welcome)
+
+**Enthusiasm:** 😔
+
+Love the course, super what I needed right now, but I wish I got to *code* today. Hopefully I will get to do some later today on my portfolio, perhaps, but I have so many college apps I'm procrastinating on. Earlier today I made a thing in rawgraphs.io:
+
+![graph of top senate campaign spending](/docs/top_senate_campaigns.png)
+
+**Goals for the future:**
+
+* TikTok visual essay (submit to pudding.cool)
+* Continue the Senate race analysis (try applying it to the GA races after results come out)
