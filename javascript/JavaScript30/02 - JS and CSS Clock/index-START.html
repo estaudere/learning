@@ -54,7 +54,6 @@
       width: 100%;
       height: 100%;
       transform: translateY(-3px); /* account for the height of the clock hands */
-      align-items: right;
     }
 
     .hand {
@@ -87,7 +86,6 @@
 
     function removeTransition(hand) {
       hand.style.transition = 'all 0s';
-      console.log("removed");
     }
 
     function addTransition(hand) {
@@ -103,7 +101,9 @@
         removeTransition(secondHand)
       }
       secondHand.style.transform = `rotate(${secDegrees}deg)`;
-      addTransition(secondHand);
+      if (secDegrees === 96) {
+        addTransition(secondHand);
+      }
 
       const minDegrees = (now.getMinutes() * 6) + 90;
       minuteHand.style.transform = `translateX(16px) rotate(${minDegrees}deg)`;
