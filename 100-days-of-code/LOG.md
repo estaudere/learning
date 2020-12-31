@@ -12,7 +12,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 |-----|------|-------------|-------------|------|
 | 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
 | 2   | 12.30.20 | infovis | none | [course](#day-2) |
-| 3   |      |             |             |      |
+| 3   | 12.31.20 | JavaScript30 | javascript, css | [**JS Clock**](#day-3) |
 | 4   |      |             |             |      |
 | 5   |      |             |             |      |
 | 6   |      |             |             |      |
@@ -142,3 +142,11 @@ Love the course, super what I needed right now, but I wish I got to *code* today
 
 * TikTok visual essay (submit to pudding.cool)
 * Continue the Senate race analysis (try applying it to the GA races after results come out)
+
+### Day 3
+
+**Focus:** JavaScript 30's JS/CSS Clock Face
+
+**Enthusiasm:** 😐
+
+Need to finish my COLLEGE SUPPLEMENTS AHHH. Hopefully I will not code until they are finished today. I went over the hour on this particular project, made some edits from what he gave! Can use some more improvements but this is a working baseline. Want to do more info vis once I have the JS portion down!
