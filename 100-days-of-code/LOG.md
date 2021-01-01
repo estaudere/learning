@@ -13,7 +13,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
 | 2   | 12.30.20 | infovis | none | [course](#day-2) |
 | 3   | 12.31.20 | JavaScript30 | javascript, css | [**JS Clock**](#day-3) |
-| 4   |      |             |             |      |
+| 4   | 01.01.20 | JavaScript30 | javascript, css | [**Updating an image**](#day-4) |
 | 5   |      |             |             |      |
 | 6   |      |             |             |      |
 | 7   |      |             |             |      |
@@ -150,3 +150,17 @@ Love the course, super what I needed right now, but I wish I got to *code* today
 **Enthusiasm:** 😐
 
 Need to finish my COLLEGE SUPPLEMENTS AHHH. Hopefully I will not code until they are finished today. I went over the hour on this particular project, made some edits from what he gave! Can use some more improvements but this is a working baseline. Want to do more info vis once I have the JS portion down!
+
+### Day 4
+
+**Focus:** JavaScript 30's JS/CSS Variables
+
+**Enthusiasm:** 🤓
+
+Finally understood some concepts that would help me with inputs. I need to really practice and start memorizing this info, I want to put more of my own twists to the projects and want to be more creative since I had a lot of extra time today. Happy New Year's!
+
+**Goals for the future:**
+
+* More creative spin-offs of the JS exercises
+* Watching the video once, then trying to solve it on my own from what I learned, or solving portions of it on my own before he finishes
+* A simple JS game for my baby sister (maybe based on pixels/tapping on buttons)
