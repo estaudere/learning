@@ -14,7 +14,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 2   | 12.30.20 | infovis | none | [course](#day-2) |
 | 3   | 12.31.20 | JavaScript30 | javascript, css | [**JS Clock**](#day-3) |
 | 4   | 01.01.20 | JavaScript30 | javascript, css | [**Updating an image**](#day-4) |
-| 5   |      |             |             |      |
+| 5   | 01.02.20 | JavaScript 30 | javascript | [array cardio](#day-5) |
 | 6   |      |             |             |      |
 | 7   |      |             |             |      |
 | 8   |      |             |             |      |
@@ -164,3 +164,11 @@ Finally understood some concepts that would help me with inputs. I need to reall
 * More creative spin-offs of the JS exercises
 * Watching the video once, then trying to solve it on my own from what I learned, or solving portions of it on my own before he finishes
 * A simple JS game for my baby sister (maybe based on pixels/tapping on buttons)
+
+### Day 5
+
+**Focus:** JavaScript 30's Array Cardio 1
+
+**Enthusiasm:** 😔
+
+Agh JS reduce is super confusing and the syntax/processes are so different from Python because it's so much less abstracted. This was useful to know though and I'm glad I got to do this! I need more practice with JS arrays/methods since it will be really useful for D3.
