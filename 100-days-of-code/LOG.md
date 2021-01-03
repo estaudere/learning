@@ -13,9 +13,9 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
 | 2   | 12.30.20 | infovis | none | [course](#day-2) |
 | 3   | 12.31.20 | JavaScript30 | javascript, css | [**JS Clock**](#day-3) |
-| 4   | 01.01.20 | JavaScript30 | javascript, css | [**Updating an image**](#day-4) |
-| 5   | 01.02.20 | JavaScript30 | javascript, css | [array cardio + flex gallery](#day-5) |
-| 6   |      |             |             |      |
+| 4   | 01.01.21 | JavaScript30 | javascript, css | [**Updating an image**](#day-4) |
+| 5   | 01.02.21 | JavaScript30 | javascript, css | [array cardio + flex gallery](#day-5) |
+| 6   | 01.03.21 | notes/wiki system | none | [**neha's notes**](#day-6) |
 | 7   |      |             |             |      |
 | 8   |      |             |             |      |
 | 9   |      |             |             |      |
@@ -176,3 +176,11 @@ Agh JS reduce is super confusing and the syntax/processes are so different from 
 Update: I went back later that day and did another day of JavaScript30! This one seems much more applicable to web dev, so its interesting I get to do it now. Very fun very fun and surprisingly really easy (note to self: check out what the flexbox when you get the chance to study it)!
 
 Should I start including normal coding with #100DaysOfCode? I don't think so just because I'm trying to keep it just to coding practice, but I'm learning R in another project and it might be useful with machine learning.
+
+### Day 6
+
+**Focus:** A notes/wiki system
+
+**Enthusiasm:** 😫
+
+Not much *coding* today but I started a [wiki](https://estaudere.github.io/notes) inspired by others like Andy Matuschak's. It's part knowledgebase, part deep thinking partner. I'm hoping to house everything I've ever learned/realized in that wiki at some point. It seems like a daunting task, but I am anxious to see what it looks like when I hit 20 notes, 50 notes, 100 notes. Very motivating. I wish I could write in it all day.
