@@ -16,7 +16,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 4   | 01.01.21 | JavaScript30 | javascript, css | [**Updating an image**](#day-4) |
 | 5   | 01.02.21 | JavaScript30 | javascript, css | [array cardio + flex gallery](#day-5) |
 | 6   | 01.03.21 | notes/wiki system | none | [**neha's notes**](#day-6) |
-| 7   |      |             |             |      |
+| 7   | 01.04.21 | JavaScript30 | javascript | [**City Filter**](#day-7) |
 | 8   |      |             |             |      |
 | 9   |      |             |             |      |
 | 10  |      |             |             |      |
@@ -184,3 +184,11 @@ Should I start including normal coding with #100DaysOfCode? I don't think so jus
 **Enthusiasm:** 😫
 
 Not much *coding* today but I started a [wiki](https://estaudere.github.io/notes) inspired by others like Andy Matuschak's. It's part knowledgebase, part deep thinking partner. I'm hoping to house everything I've ever learned/realized in that wiki at some point. It seems like a daunting task, but I am anxious to see what it looks like when I hit 20 notes, 50 notes, 100 notes. Very motivating. I wish I could write in it all day.
+
+### Day 7
+
+**Focus:** City filter
+
+**Enthusiasm:** 😐
+
+Sort of struggling? I understand the concepts because this is all things I've seen before but this is fast—I've never done RegEx before, or very much interacting with the web browser through code. Exciting to make something so cool, though!
