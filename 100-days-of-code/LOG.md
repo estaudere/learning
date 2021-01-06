@@ -17,7 +17,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 5   | 01.02.21 | JavaScript30 | javascript, css | [array cardio + flex gallery](#day-5) |
 | 6   | 01.03.21 | notes/wiki system | none | [**neha's notes**](#day-6) |
 | 7   | 01.04.21 | JavaScript30 | javascript | [**City Filter**](#day-7) |
-| 8   |      |             |             |      |
+| 8   | 01.05.21 | JavaScript30 | javascript | [array cardio](#day-8) |
 | 9   |      |             |             |      |
 | 10  |      |             |             |      |
 | 11  |      |             |             |      |
@@ -192,3 +192,11 @@ Not much *coding* today but I started a [wiki](https://estaudere.github.io/notes
 **Enthusiasm:** 😐
 
 Sort of struggling? I understand the concepts because this is all things I've seen before but this is fast—I've never done RegEx before, or very much interacting with the web browser through code. Exciting to make something so cool, though!
+
+### Day 8
+
+**Focus:** Array Cardio 2
+
+**Enthusiasm:** 😔
+
+More array methods today, once again useful for dealing with data. Short & sweet!
