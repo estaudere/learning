@@ -18,7 +18,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 6   | 01.03.21 | notes/wiki system | none | [**neha's notes**](#day-6) |
 | 7   | 01.04.21 | JavaScript30 | javascript | [**City Filter**](#day-7) |
 | 8   | 01.05.21 | JavaScript30 | javascript | [array cardio](#day-8) |
-| 9   |      |             |             |      |
+| 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
 | 10  |      |             |             |      |
 | 11  |      |             |             |      |
 | 12  |      |             |             |      |
@@ -200,3 +200,11 @@ Sort of struggling? I understand the concepts because this is all things I've se
 **Enthusiasm:** 😔
 
 More array methods today, once again useful for dealing with data. Short & sweet!
+
+### Day 9
+
+**Focus:** Fun with HTML5
+
+**Enthusiasm:** 😐
+
+HTML5 canvas! Took a while but I made some edits to it, now it also shows a random joke from JokeAPI.

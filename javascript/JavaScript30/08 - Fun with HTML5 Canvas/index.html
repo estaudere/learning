@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="draw" width="800" height="800" style ="z-index: 2; position: absolute; top: 0px; left: 0px;"></canvas>
+<div id="joke-container" style="z-index: 1; position: absolute; top: 20px; left: 20px;">
+  <h2 id="joke--text"></h2>
+</div>
+<script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+<script>
+  function updateJoke(jokeData) {
+    const text = document.getElementById('joke--text');
+    text.innerHTML = jokeData.joke;
+    console.log(jokeData.joke);
+  }
+  
+  JokeAPI.getJokes({
+    jokeType: "single"
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      updateJoke(data);
+    })
+
+  const canvas = document.querySelector('#draw');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  ctx.strokeStyle = getColor();
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.lineWidth = 70;
+  ctx.globalCompositionOperation = 'destination-over';
+
+  function getColor(){ 
+    return "hsl(" + 360 * Math.random() + ',' +
+              (25 + 70 * Math.random()) + '%,' + 
+              (85 + 10 * Math.random()) + '%)'
+  }
+
+  let isDrawing = false;
+  let lastX = 0;
+  let lastY = 0;
+  let hue = getColor();
+  let direction = true;
+
+  function draw (e) {
+    if (!isDrawing) return;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    ctx.beginPath();
+    // start from
+    ctx.moveTo(lastX, lastY);
+    // go to
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+
+    // hue++;
+    // if (hue >= 360) hue = 0;
+
+    // if (ctx.lineWidth >= 50 || ctx.lineWidth <= 20) {
+    //   direction = !direction;
+    // }
+    // if (direction) ctx.lineWidth++;
+    // else ctx.lineWidth--;
+  }
+
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mousedown', () => {
+    isDrawing = true;
+    });
+  // canvas.addEventListener('mouseup', () => isDrawing = false);
+  
+
+</script>
+
+<style>
+  html, body {
+    margin: 0;
+  }
+</style>
+
+</body>
+</html>
