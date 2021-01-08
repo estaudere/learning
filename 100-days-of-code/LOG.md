@@ -19,7 +19,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 7   | 01.04.21 | JavaScript30 | javascript | [**City Filter**](#day-7) |
 | 8   | 01.05.21 | JavaScript30 | javascript | [array cardio](#day-8) |
 | 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
-| 10  |      |             |             |      |
+| 10  | 01.07.21 | machine learning | python | [kaggle course](#day-10) |
 | 11  |      |             |             |      |
 | 12  |      |             |             |      |
 | 13  |      |             |             |      |
@@ -203,8 +203,22 @@ More array methods today, once again useful for dealing with data. Short & sweet
 
 ### Day 9
 
-**Focus:** Fun with HTML5
+**Focus:** Fun with HTML5 + some exploratory machine learning
 
 **Enthusiasm:** 😐
 
-HTML5 canvas! Took a while but I made some edits to it, now it also shows a random joke from JokeAPI.
+HTML5 canvas! Took a while but I made some edits to it, now it also shows a random joke from JokeAPI. Update: finished some [exploratory analysis](../data/exploratory-analysis) on a the third Harry Potter script using NLP. I'll be integrating this with a larger project later :)
+
+### Day 10
+
+**Focus:** Machine Learning Basics (Kaggle)
+
+**Enthusiasm:** 😌
+
+Completed a Kaggle course on decision trees and random forest trees! I hope to be able to apply these concepts conceptually as well, instead of just rote application. Would help to generate some sort of starter code in my wiki for this! Useful to know the basics when I felt previously that I jumped ahead.
+
+**Goals for the future:**
+
+* Machine learning wiki page(s)
+* Using different datasets
+* More Kaggle courses! They are pretty helpful when you have a good basic understanding
