@@ -8,7 +8,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 
 ## Log
 
-| Day | Date | Description | Language(s) | Link |
+| Day | Date | Description | Language(s) | Notes |
 |-----|------|-------------|-------------|------|
 | 1   | 12.29.20 | JavaScript30 Day 1! | javascript | [**JS Drum Kit**](#day-1) |
 | 2   | 12.30.20 | infovis | none | [course](#day-2) |
@@ -20,7 +20,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 8   | 01.05.21 | JavaScript30 | javascript | [array cardio](#day-8) |
 | 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
 | 10  | 01.07.21 | machine learning | python | [kaggle course](#day-10) |
-| 11  |      |             |             |      |
+| 11  | 01.08.21 | machine learning | python | [exploratory analysis](#day-11) |
 | 12  |      |             |             |      |
 | 13  |      |             |             |      |
 | 14  |      |             |             |      |
@@ -222,3 +222,11 @@ Completed a Kaggle course on decision trees and random forest trees! I hope to b
 * Machine learning wiki page(s)
 * Using different datasets
 * More Kaggle courses! They are pretty helpful when you have a good basic understanding
+
+### Day 11
+
+**Focus:** Machine Learning Basics
+
+**Enthusiasm:** 😐
+
+Practiced with a random forest regressor in Python on Spotify song data to predict song popularity. Data was from Kaggle, code can be found [here](../data/spotify-data-randomforest.ipynb).
