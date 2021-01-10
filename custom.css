@@ -1,0 +1,57 @@
+:root {
+  --dark-color: #070707;
+  --light-color: #77a0a9;
+  --hover-color: #5d7d85;
+}
+
+body {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.card {
+  padding: 0;
+  width: 100%;
+  border: 1px solid var(--light-color);
+}
+
+.card-body {
+  background: var(--light-color);
+  color: var(--dark-color);
+  text-align: left;
+  height: 100px;
+  transition: all 0.5s;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.card-body:hover {
+  background: var(--hover-color);
+  text-align: left;
+  height: 100px;
+  text-decoration: none;
+}
+
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.card {
+  padding: 0;
+  width: 100%;
+}
+
+hr {
+  border-top: 1px solid var(--light-color);
+}
+
+.small-link {
+  text-decoration: underline;
+}
