@@ -21,7 +21,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
 | 10  | 01.07.21 | machine learning | python | [kaggle course](#day-10) |
 | 11  | 01.08.21 | machine learning | python | [exploratory analysis](#day-11) |
-| 12  |      |             |             |      |
+| 12  | 01.09.21 | JaavaScript30 | javascript | [console devtools](#day-12) |
 | 13  |      |             |             |      |
 | 14  |      |             |             |      |
 | 15  |      |             |             |      |
@@ -230,3 +230,11 @@ Completed a Kaggle course on decision trees and random forest trees! I hope to b
 **Enthusiasm:** 😐
 
 Practiced with a random forest regressor in Python on Spotify song data to predict song popularity. Data was from Kaggle, code can be found [here](../data/spotify-data-randomforest.ipynb).
+
+### Day 12
+
+**Focus:** Console DevTools
+
+**Enthusiasm:** 😐
+
+Learned a bunch of javascript console devtools with JavaScript30. Hopefully can work on a little bit of data later tonight!
