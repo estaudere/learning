@@ -4,7 +4,7 @@
 
 **End:** TBD
 
-I'm hoping to start with 30 Days of Javascript while saving some time to work on a backlog of other projects, as well as D3 and machine learning with FreeCodeCamp and Python.
+I'm hoping to start with 30 Days of Javascript while saving some time to work on a backlog of other projects, as well as D3, data storytelling, and machine learning with FreeCodeCamp, Coursera, various books, and Python.
 
 ## Log
 
@@ -21,8 +21,8 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
 | 10  | 01.07.21 | machine learning | python | [kaggle course](#day-10) |
 | 11  | 01.08.21 | machine learning | python | [exploratory analysis](#day-11) |
-| 12  | 01.09.21 | JaavaScript30 | javascript | [console devtools](#day-12) |
-| 13  |      |             |             |      |
+| 12  | 01.09.21 | JavaScript30 | javascript | [console devtools](#day-12) |
+| 13  | 01.01.21 | notes/wiki system | html/css | [**digital notes**](#day-13) |
 | 14  |      |             |             |      |
 | 15  |      |             |             |      |
 | 16  |      |             |             |      |
@@ -238,3 +238,11 @@ Practiced with a random forest regressor in Python on Spotify song data to predi
 **Enthusiasm:** 😐
 
 Learned a bunch of javascript console devtools with JavaScript30. Hopefully can work on a little bit of data later tonight!
+
+### Day 13
+
+**Focus:** notes wiki + other projects
+
+**Enthusiasm:** 😫
+
+Worked on my digital notes website (https://estaudere.netlify.app) and a some from other data projects (criminal race analysis mainly). I did not learn a whole lot except for some new methods to explore a dataset. Excited to work on more NLP and data research later.
