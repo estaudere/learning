@@ -21,9 +21,9 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 9   | 01.06.21 | JavaScript30 | javascript, html5 | [**canvas with joke**](#day-9) |
 | 10  | 01.07.21 | machine learning | python | [kaggle course](#day-10) |
 | 11  | 01.08.21 | machine learning | python | [exploratory analysis](#day-11) |
-| 12  | 01.09.21 | JavaScript30 | javascript | [console devtools](#day-12) |
-| 13  | 01.01.21 | notes/wiki system | html/css | [**digital notes**](#day-13) |
-| 14  |      |             |             |      |
+| 12  | 01.09.21 | JavaScript30 | javascript | [Console Devtools](#day-12) |
+| 13  | 01.10.21 | notes/wiki system | html/css | [**digital notes**](#day-13) |
+| 14  | 01.11.21 | data viz | none | [*Data Points*](#day-14) |
 | 15  |      |             |             |      |
 | 16  |      |             |             |      |
 | 17  |      |             |             |      |
@@ -246,3 +246,11 @@ Learned a bunch of javascript console devtools with JavaScript30. Hopefully can 
 **Enthusiasm:** 😫
 
 Worked on my digital notes website (https://estaudere.netlify.app) and a some from other data projects (criminal race analysis mainly). I did not learn a whole lot except for some new methods to explore a dataset. Excited to work on more NLP and data research later.
+
+### Day 14
+
+**Focus:** data viz + other projects
+
+**Enthusiasm:** 😌
+
+Read through some pages from Nathan Yau's *Data Points* which is super interesting and engaging. I also worked primarily on another data analysis project in Python for another thing I'm working on. Feeling like there are just so many things to learn! I need to way to map out where the gaps in my knowledge are. (Take a look at knowledge trees!)
