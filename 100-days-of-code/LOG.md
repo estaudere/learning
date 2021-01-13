@@ -24,7 +24,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 12  | 01.09.21 | JavaScript30 | javascript | [Console Devtools](#day-12) |
 | 13  | 01.10.21 | notes/wiki system | html/css | [**digital notes**](#day-13) |
 | 14  | 01.11.21 | data viz | none | [*Data Points*](#day-14) |
-| 15  |      |             |             |      |
+| 15  | 01.12.21 | JavaScript30 | javascript | [**Checkboxes**](#day-15) |
 | 16  |      |             |             |      |
 | 17  |      |             |             |      |
 | 18  |      |             |             |      |
@@ -254,3 +254,11 @@ Worked on my digital notes website (https://estaudere.netlify.app) and a some fr
 **Enthusiasm:** 😌
 
 Read through some pages from Nathan Yau's *Data Points* which is super interesting and engaging. I also worked primarily on another data analysis project in Python for another thing I'm working on. Feeling like there are just so many things to learn! I need to way to map out where the gaps in my knowledge are. (Take a look at knowledge trees!)
+
+### Day 15
+
+**Focus:** Javascript30
+
+**Enthusiasm:** 😫
+
+Desperately confused by that last lesson. I should go back and take notes on many of the concepts from this course, although this course is not structured for that kind of work. (Go back through Javascript on Codecademy?)
