@@ -25,8 +25,8 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 13  | 01.10.21 | notes/wiki system | html/css | [**digital notes**](#day-13) |
 | 14  | 01.11.21 | data viz | none | [*Data Points*](#day-14) |
 | 15  | 01.12.21 | JavaScript30 | javascript | [**Checkboxes**](#day-15) |
-| 16  |      |             |             |      |
-| 17  |      |             |             |      |
+| 16  | 01.13.21 | data viz | none | [data viz](#day-16) |
+| 17  | 01.14.21 | data viz | javascript | [data viz](#day-17) |
 | 18  |      |             |             |      |
 | 19  |      |             |             |      |
 | 20  |      |             |             |      |
@@ -262,3 +262,19 @@ Read through some pages from Nathan Yau's *Data Points* which is super interesti
 **Enthusiasm:** 😫
 
 Desperately confused by that last lesson. I should go back and take notes on many of the concepts from this course, although this course is not structured for that kind of work. (Go back through Javascript on Codecademy?)
+
+### Day 16
+
+**Focus:** Data Viz
+
+**Enthusiasm:** 😐
+
+Finished (more or less) *Data Points* by Nathan Yau. It was fairly good as an overview of a lot of different exploratory techniques, and I was able to (sort of) apply it to a side project I am doing for data journalism/storytelling. I am hoping to apply more of it in the future.
+
+### Day 17
+
+**Focus:** Data Viz
+
+**Enthusiasm:** 😐
+
+I have not been getting as much time lately to work on computer science, and I want to go back to straight coding concepts over broad, general topics which are less engaging. Started (again) Scott Murray's D3 book and also did some deep dive explorations in the data for a side project I am work on (in Tableau for now).
