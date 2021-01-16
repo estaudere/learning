@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Page Template</title>
+        <script type="text/javascript" src="./d3.js"></script>
+        <style>
+            div.bar {
+                display: inline-block;
+                width: 20px;
+                height: 75px;
+                background-color: teal;
+                margin-right: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // d3.select("body").append("p").text("Hi! I'm a new D3-generated paragraph."); // populate the page
+
+            var dataset;
+            var w = 500;
+            var h = 150;
+            var barPadding = 1;
+
+            // load your data from external CSV
+            // d3.csv('../data/Texas - Award Year Summary-Table 1.csv', function(x) {
+            //     dataset = x;
+            //     console.log(data);
+            // }); // do what you need to do on load
+            
+            dataset = [ 25, 7, 5, 26, 11, 20, 25, 14, 26, 16, 14, 11, 22, 29, 11, 13, 12, 17, 15, 10, 24, 18, 25, 4, 3 ];
+            // dataset = [ 5, 10, 15, 20, 25 ];
+
+
+            var svg = d3.select("body").append("svg").attr("width", w).attr("height", h);
+            var bars = svg.selectAll("rect")
+                .data(dataset)
+                .enter()
+                .append("rect") 
+            bars.attr("x", function(d, i) { return i * (w / dataset.length); })
+                .attr("y", function(d) { return h - (d * 4); })
+                .attr("width", w / dataset.length - barPadding)
+                .attr("height", function(d) { return d * 4; })
+                .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; });
+
+
+        </script>
+
+
+    </body>
+</html>

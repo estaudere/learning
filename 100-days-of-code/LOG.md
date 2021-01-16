@@ -27,7 +27,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 15  | 01.12.21 | JavaScript30 | javascript | [**Checkboxes**](#day-15) |
 | 16  | 01.13.21 | data viz | none | [data viz](#day-16) |
 | 17  | 01.14.21 | data viz | javascript | [data viz](#day-17) |
-| 18  |      |             |             |      |
+| 18  | 01.15.21 | data viz | javascript/d3 | [**D3**](#day-18) |
 | 19  |      |             |             |      |
 | 20  |      |             |             |      |
 | 21  |      |             |             |      |
@@ -278,3 +278,11 @@ Finished (more or less) *Data Points* by Nathan Yau. It was fairly good as an ov
 **Enthusiasm:** 😐
 
 I have not been getting as much time lately to work on computer science, and I want to go back to straight coding concepts over broad, general topics which are less engaging. Started (again) Scott Murray's D3 book and also did some deep dive explorations in the data for a side project I am work on (in Tableau for now).
+
+### Day 18
+
+**Focus:** Interactive Data Viz For The Web (Scott Murray)
+
+**Enthusiasm:** 🥰
+
+Very happy with my progress, I wish I had time to do more! I'm super looking forward to what else D3 can do, and Scott Murray is amazing. I did way more than an hour today, and I already have some really good ideas of where I want to go with my projects.
