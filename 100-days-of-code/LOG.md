@@ -28,7 +28,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 16  | 01.13.21 | data viz | none | [data viz](#day-16) |
 | 17  | 01.14.21 | data viz | javascript | [data viz](#day-17) |
 | 18  | 01.15.21 | data viz | javascript/d3 | [**D3**](#day-18) |
-| 19  |      |             |             |      |
+| 19  | 01.16.21 | data viz | javascript/d3 |[**D3**](#day-19) |
 | 20  |      |             |             |      |
 | 21  |      |             |             |      |
 | 22  |      |             |             |      |
@@ -286,3 +286,11 @@ I have not been getting as much time lately to work on computer science, and I w
 **Enthusiasm:** 🥰
 
 Very happy with my progress, I wish I had time to do more! I'm super looking forward to what else D3 can do, and Scott Murray is amazing. I did way more than an hour today, and I already have some really good ideas of where I want to go with my projects.
+
+### Day 19
+
+**Focus:** Interactive Data Viz For The Web (Scott Murray)
+
+**Enthusiasm:** 🤓
+
+A lot to process, but I will be coming back to this tomorrow hopefully! I really love the project I've made once again, and I am excited to move on to updates/transitions/movement tomorrow! Making a lot of progress in data projects as well, I have some more work to do.
