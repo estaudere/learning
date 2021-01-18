@@ -26,7 +26,10 @@
         </style>
     </head>
     <body>
+
+        <p style="font-family: sans-serif; background: teal; color: white; width: 200px; padding: 4px;">Click me to change data :)</p>
         <script type="text/javascript">
+            
             // insert a heading
             d3.select("body").append("h2").text("Here's a cool graph!")
 
@@ -43,21 +46,63 @@
             //     console.log(data);
             // }); // do what you need to do on load
             
+            // ------------ creating a bar graph ------------
             dataset = [ 25, 7, 5, 26, 11, 20, 25, 14, 26, 16, 14, 11, 22, 29, 11, 13, 12, 17, 15, 10, 24, 18, 25, 4, 3 ];
             // dataset = [ 5, 10, 15, 20, 25 ];
 
+
+            var newValue = false;
+            d3.select("h2").on("click", function() {
+                
+                var length = dataset.length;
+                dataset = [];
+                for (var i = 0; i < length; i++) {
+                    dataset.push(Math.floor(Math.random() * 25));
+                }
+                
+
+                svg.selectAll("rect").data(dataset)
+                    .transition()
+                    .delay(function(d, i) { return i / dataset.length * 1000; })
+                    .duration(450)
+                    .attr("x", function(d, i) { return xBarScale(i); })
+                    .attr("y", function(d) { return h - yBarScale(d); })
+                    .attr("width", xBarScale.bandwidth())
+                    .attr("height", function(d) { return yBarScale(d); })
+                    .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; });
+
+                svg.selectAll("text")
+                    .data(dataset)
+                    .transition()
+                    .text(function (d) { return d; })
+                    .delay(function(d, i) { return i / dataset.length * 1000; })
+                    .duration(450)
+                    .attr("y", function(d) { return h - yBarScale(d) - 3; });
+            });
+
             // create the overall SVG
-            var svg = d3.select("body").append("svg").attr("width", w).attr("height", 150);
+            var svg = d3.select("body").append("svg").attr("width", w).attr("height", h);
+
+            //create a scale for the bars
+            var xBarScale = d3.scaleBand()
+                                .domain(d3.range(dataset.length))
+                                .rangeRound([0, w])
+                                .padding(0.05);
+            var yBarScale = d3.scaleLinear()
+                                .domain([0, d3.max(dataset)])
+                                .range([0, h - padding])
+
+            var yBarAxis = d3.axisLeft().scale(yBarScale).ticks(4);
 
             // create the bars
             var bars = svg.selectAll("rect")
                 .data(dataset)
-                .enter()
+            bars.enter()
                 .append("rect") 
-            bars.attr("x", function(d, i) { return i * (w / dataset.length); })
-                .attr("y", function(d) { return 150 - (d * 4); })
-                .attr("width", w / dataset.length - barPadding)
-                .attr("height", function(d) { return d * 4; })
+            bars.attr("x", function(d, i) { return xBarScale(i); })
+                .attr("y", function(d) { return h - yBarScale(d); })
+                .attr("width", xBarScale.bandwidth())
+                .attr("height", function(d) { return yBarScale(d); })
                 .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; });
 
             // create the labels
@@ -66,31 +111,29 @@
                 .enter()
                 .append("text")
                 .text(function (d) { return d; });
-            text.attr("x", function(d, i) { return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2; })
-                .attr("y", function(d) { return 150 - (d * 4) - 3; })
+            text.attr("x", function(d, i) { return xBarScale(i) + xBarScale.bandwidth() / 2; })
+                .attr("y", function(d) { return h - yBarScale(d) - 3; })
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "12px")
                 .attr("fill", "gray")
                 .attr("text-anchor", "middle");
 
             
-            d3.select("body").append("hr").attr("color", "white");
+
+            d3.select("body").append("hr").attr("color", "white"); // horizontal rule
 
             // ------------ creating a scatterplot ------------
-            // dataset = [ [5, 20], [480, 90], [250, 50], [100, 33], [330, 95], [410, 12], [475, 44], [25, 67], [85, 21], [220, 88] ];
-            //Dynamic, random dataset
-            dataset = [];
+            var sDataset = [];
             for (var i = 0; i < 50; i++) {
-                dataset.push([Math.floor(Math.random() * 600), Math.floor(Math.random() * 500)]);
+                sDataset.push([Math.floor(Math.random() * 600), Math.floor(Math.random() * 500)]);
             }
-
-
+ 
             // creating our scales to map values to
             var xScale = d3.scaleLinear()
-                            .domain([0, d3.max(dataset, function(d) { return d[0]; })])
-                            .range([padding, w - padding * 4]);
+                            .domain([0, d3.max(sDataset, function(d) { return d[0]; })])
+                            .range([padding, w - padding]);
             var yScale = d3.scaleLinear()
-                            .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+                            .domain([0, d3.max(sDataset, function(d) { return d[1]; })])
                             .range([h - padding, padding]);
 
             // create our axes
@@ -99,31 +142,87 @@
 
 
             var svg2 = d3.select("body").append("svg").attr("width", w).attr("height", h); // create the svg
-            var points = svg2.selectAll("circle").data(dataset).enter().append("circle"); // plot the points
+            
+            var clipPath = svg2.append("clipPath")
+                                .attr("id", "chart-area")
+                                .append("rect")
+                                .attr("x", padding)
+                                .attr("y", padding)
+                                .attr("width", w - padding * 2)
+                                .attr("height", h - padding * 2);
+
+            var points = svg2.append("g").attr("id", "points").attr("clip-path", "url(#chart-area)")
+                            .selectAll("circle").data(sDataset).enter().append("circle"); // plot the points with a clip path
             points.attr("cx", function(d) { return xScale(d[0]); })
                 .attr("cy", function(d) { return yScale(d[1]); })
                 .attr("r", 3);
 
             // creating labels
-            // var labels = svg2.selectAll("text").data(dataset).enter().append("text").text(function(d) { return d[0] + ", " + d[1]; });
-            // labels.attr("x", function(d) { return xScale(d[0]); })
-            //     .attr("y", function(d) { return yScale(d[1]); })
-            //     .attr("font-family", "sans-serif")
-            //     .attr("font-size", "12px")
-            //     .attr("fill", "gray");
+
+            var showLabels = false;
+            if (showLabels) {
+                var labels = svg2.selectAll("text").data(sDataset).enter().append("text").text(function(d) { return Math.floor(d[0]) + ", " + Math.floor(d[1]); });
+                labels.attr("x", function(d) { return xScale(d[0]); })
+                    .attr("y", function(d) { return yScale(d[1]); })
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", "12px")
+                    .attr("fill", "gray");
+            }
 
             // add the axes to the end
             svg2.append("g")
-                .attr("class", "axis")
+                .attr("class", "x axis")
                 .attr("transform", "translate(0," + (h - padding) + ")")
                 .call(xAxis);
 
             svg2.append("g")
-                .attr("class", "axis")
+                .attr("class", "y axis")
                 .attr("transform", "translate(" + padding + ", 0)")
                 .call(yAxis);
 
+                d3.select("p").on("click", function() {
+                var length = sDataset.length
+                sDataset = [];
+                for (var i = 0; i < 50; i++) {
+                    sDataset.push([Math.floor(Math.random() * Math.random() * 500), Math.floor(Math.random() * 500)]);
+                }
 
+                xScale.domain([0, d3.max(sDataset, function(d) { return d[0]; })]);
+                yScale.domain([0, d3.max(sDataset, function(d) { return d[1]; })]);
+
+
+                svg2.selectAll("circle").data(sDataset)
+                    .transition()
+                    .on("start", function() {
+                        d3.select(this)
+                            .attr("fill", "teal")
+                            .attr("r", 5);
+                    })
+                    .attr("cx", function(d) { return xScale(d[0]); })
+                    .attr("cy", function(d) { return yScale(d[1]); })
+                    .on("end", function() {
+                        d3.select(this)
+                            .transition()
+                            .duration(700)
+                            .attr("fill", "black")
+                            .attr("r", 3);
+                    });
+
+                if (showLabels){
+                    svg2.selectAll("text").data(sDataset).text(function(d) { return Math.floor(d[0]) + ", " + Math.floor(d[1]); })
+                        .attr("x", function(d) { return xScale(d[0]); })
+                        .attr("y", function(d) { return yScale(d[1]); });
+                }
+                    
+                svg2.select(".x.axis")
+                    .transition()
+                    .duration(1000)
+                    .call(xAxis);
+                svg2.select(".y.axis")
+                    .transition()
+                    .duration(1000)
+                    .call(yAxis);
+            });
 
 
         </script>
