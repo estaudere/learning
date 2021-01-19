@@ -40,6 +40,9 @@
             var barPadding = 1;
             var padding = 25;
 
+            // control variables
+            var newValue = false;
+
             // load your data from external CSV
             // d3.csv('../data/Texas - Award Year Summary-Table 1.csv', function(x) {
             //     dataset = x;
@@ -51,15 +54,29 @@
             // dataset = [ 5, 10, 15, 20, 25 ];
 
 
-            var newValue = false;
+            
             d3.select("h2").on("click", function() {
                 
-                var length = dataset.length;
-                dataset = [];
-                for (var i = 0; i < length; i++) {
-                    dataset.push(Math.floor(Math.random() * 25));
+
+                if (newValue) {
+                    dataset.push(Math.floor(Math.random() * 30));
+                    svg.selectAll("rect").data(dataset).enter().append('rect')
+                    .attr("x", w)
+                    .attr("y", function(d) { return h - yBarScale(d); })
+                    .attr("width", xBarScale.bandwidth()) .attr("height", function(d) { return yScale(d); })
+                    .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; });
+                }
+                else { 
+                    var length = dataset.length;
+                    dataset = [];
+                    for (var i = 0; i < length; i++) {
+                        dataset.push(Math.floor(Math.random() * 25));
+                    }
                 }
                 
+                
+                xBarScale.domain(d3.range(dataset.length));
+                yBarScale.domain([0, d3.max(dataset)]);
 
                 svg.selectAll("rect").data(dataset)
                     .transition()
@@ -97,13 +114,25 @@
             // create the bars
             var bars = svg.selectAll("rect")
                 .data(dataset)
-            bars.enter()
+                .enter()
                 .append("rect") 
             bars.attr("x", function(d, i) { return xBarScale(i); })
                 .attr("y", function(d) { return h - yBarScale(d); })
                 .attr("width", xBarScale.bandwidth())
                 .attr("height", function(d) { return yBarScale(d); })
-                .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; });
+                .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")"; })
+                .on("mouseover", function() {
+                    d3.select(this)
+                        .transition()
+                        .duration(100)
+                        .attr("fill", "magenta");
+                })
+                .on("mouseout", function(d) {
+                    d3.select(this)
+                        .transition()
+                        .duration(250)
+                        .attr("fill", "rgb(0, 0, " + (d * 10) + ")");
+                })
 
             // create the labels
             var text = svg.selectAll("text")
