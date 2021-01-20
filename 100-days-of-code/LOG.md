@@ -31,7 +31,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 19  | 01.16.21 | data viz | javascript/d3 |[**D3**](#day-19) |
 | 20  | 01.17.21 | data viz | javascript/d3 | [**D3**](#day-20) |
 | 21  | 01.18.21 | data viz | javascript/d3 | [**D3**](#day-21) |
-| 22  |      |             |             |      |
+| 22  | 01.19.21 | machine learning/twitter api | python | [**Harry Potter Analysis**](#day-22) |
 | 23  |      |             |             |      |
 | 24  |      |             |             |      |
 | 25  |      |             |             |      |
@@ -310,3 +310,11 @@ A lot to process once again! Exciting to see transitions, my visualizations look
 **Enthusiasm:** 😌
 
 Worked on both a data analysis long-term project as well as some D3. I didn't quite get to interactions yet, but I will be making a new worksheet for the rest of the material and go back through some of the things I didn't understand tomorrow.
+
+### Day 22
+
+**Focus:** Harry Potter Tweets
+
+**Enthusiasm:** 😐
+
+Twitter API is difficult to work with, there's not a whole lot of resources on the new one. However, I will be exploring more one chunk of this project at a time tomorrow.
