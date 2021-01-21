@@ -32,7 +32,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 20  | 01.17.21 | data viz | javascript/d3 | [**D3**](#day-20) |
 | 21  | 01.18.21 | data viz | javascript/d3 | [**D3**](#day-21) |
 | 22  | 01.19.21 | machine learning/twitter api | python | [**Harry Potter Analysis**](#day-22) |
-| 23  |      |             |             |      |
+| 23  | 01.20.21 | data viz | javascript/d3 | [d3 practice](#day-23) |
 | 24  |      |             |             |      |
 | 25  |      |             |             |      |
 | 26  |      |             |             |      |
@@ -318,3 +318,11 @@ Worked on both a data analysis long-term project as well as some D3. I didn't qu
 **Enthusiasm:** 😐
 
 Twitter API is difficult to work with, there's not a whole lot of resources on the new one. However, I will be exploring more one chunk of this project at a time tomorrow.
+
+### Day 23
+
+**Focus:** D3 Practice
+
+**Enthusiasm:** 😐
+
+Working with D3 for a news visualization story. Hard to work with without a tutorial :( it's pretty complicated.
