@@ -35,7 +35,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 23  | 01.20.21 | data viz | javascript/d3 | [d3 practice](#day-23) |
 | 24  | 01.21.21 | data viz | javascript/d3 | [d3 practice](#day-24) |
 | 25  | 01.22.21 | data viz | javascript/d3 | [d3 project](#day-25) |
-| 26  |      |             |             |      |
+| 26  | 01.23.21 | data viz | javascript/d3 | [d3 project](#day-26) |
 | 27  |      |             |             |      |
 | 28  |      |             |             |      |
 | 29  |      |             |             |      |
@@ -342,3 +342,11 @@ Feeling like I'm picking up a little bit, and I am understanding more about it! 
 **Enthusiasm:** 🥰
 
 Ah! Yes! I started D3 Tips & Tricks for v6 and am loving it! I picked up very easily and it was exactly what I needed—not too much to get started, easy to explore and put together the parts that make sense for me. Presents a better, more modern framework for working with D3 than Scott Murray's book (sorry, Scott). I was able to make good progress on a person D3 news visualization project! Quarter way through with 100 days woohoo 🎉
+
+### Day 26
+
+**Focus:** D3 Project
+
+**Enthusiasm:** 🥰
+
+Even more woohoo today! I got the tooltip I wanted!! It looks fantabulous. I feel like a D3 powerhouse, and although I am moving slow, I am confident I can get most of this project done very quickly.
