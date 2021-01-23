@@ -33,8 +33,8 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 21  | 01.18.21 | data viz | javascript/d3 | [**D3**](#day-21) |
 | 22  | 01.19.21 | machine learning/twitter api | python | [**Harry Potter Analysis**](#day-22) |
 | 23  | 01.20.21 | data viz | javascript/d3 | [d3 practice](#day-23) |
-| 24  |      |             |             |      |
-| 25  |      |             |             |      |
+| 24  | 01.21.21 | data viz | javascript/d3 | [d3 practice](#day-24) |
+| 25  | 01.22.21 | data viz | javascript/d3 | [d3 project](#day-25) |
 | 26  |      |             |             |      |
 | 27  |      |             |             |      |
 | 28  |      |             |             |      |
@@ -326,3 +326,19 @@ Twitter API is difficult to work with, there's not a whole lot of resources on t
 **Enthusiasm:** 😐
 
 Working with D3 for a news visualization story. Hard to work with without a tutorial :( it's pretty complicated.
+
+### Day 24
+
+**Focus:** D3 Practice
+
+**Enthusiasm:** 😐
+
+Feeling like I'm picking up a little bit, and I am understanding more about it! Finished with Scott Murray's book and am looking for more resources to achieve what I want in this project.
+
+### Day 25
+
+**Focus:** D3 Project
+
+**Enthusiasm:** 🥰
+
+Ah! Yes! I started D3 Tips & Tricks for v6 and am loving it! I picked up very easily and it was exactly what I needed—not too much to get started, easy to explore and put together the parts that make sense for me. Presents a better, more modern framework for working with D3 than Scott Murray's book (sorry, Scott). I was able to make good progress on a person D3 news visualization project! Quarter way through with 100 days woohoo 🎉
