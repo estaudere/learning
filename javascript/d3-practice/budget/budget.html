@@ -1,0 +1,202 @@
+<!--DOCTYPE html-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Coppell Budget</title>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <style>
+            
+            :root {
+                --background: #e7dfd5;
+                --secondary: #463841;
+            }
+            
+            html {
+                background: var(--background);
+            }
+            
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+                color: var(--secondary);
+            }
+
+            .content {
+                max-width: 50%;
+                display: block;
+                padding: 10px;
+                margin: auto;
+            }
+
+            .chart {
+                display: flex;
+                justify-content: center;
+            }
+
+            .chart-title {
+                font-size: 20px;
+                font-weight: bold;
+                fill: var(--secondary);
+            }
+            
+            .line {
+                fill: none;
+                stroke: var(--secondary);
+                stroke-width: 2px;
+            }
+
+            .axis, .axis-label {
+                font-size: 14px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+                color: var(--secondary);
+            }
+
+            .axis-label {
+                font-size: 14px;
+                fill: var(--secondary);
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="content">
+            <p>
+                While owners of properties within Coppell ISD will pay the full property tax, the tax that
+                the district imposes on homeowners is actually split into two parts: the maintenance and operations
+                tax and the debt service tax. Maintenance and operations makes up the vast majority of the tax
+                pennies, and this is the value that the state has strict rules around. The money from M&O goes
+                directly to funding daily services and educational programs, like payroll and salary, general education
+                departments, career and technical education, among other things. Meanwhile, the debt service tax 
+                is only used to pay off interest and pricipal on bonds, which are, in turn, only used to finance 
+                capital projects like building renovations or the construction of new schools. When residents vote 
+                to approve a bond, they are also agreeing to take on a potential increase in debt service tax.
+                The state only regulates what bonds may be used for—not how much the debt service tax is. This number
+                doesn't go into calculations for recapture, either.
+            </p>
+        </div>
+        <div class="chart"></div>
+
+        <script type="text/javascript">
+            
+            // constant margins, width, and height
+            var margin = {top: 60, right: 20, bottom: 50, left: 60},
+                width = 500 - margin.left - margin.right,
+                height = 300 - margin.top - margin.bottom;
+
+            // function to parsetime in the data
+            var parseTime = d3.timeParse("%Y");
+
+            // set up our scales
+            var x = d3.scaleTime().range([0, width]);
+            var y = d3.scaleLinear().range([height, 0]);
+
+            // set up area functions
+            var moArea = d3.area()
+                .x(function(d) { return x(d.year); })
+                .y0(height)
+                .y1(function(d) { return y(d.mo_tax); });
+            var pArea = d3.area()
+                .x(function(d) { return x(d.year); })
+                .y0(function(d) { return y(d.mo_tax); })
+                .y1(function(d) { return y(d.p_tax); });
+
+            // set up our line functions
+            var moValueline = d3.line()
+                .x(function(d) { return x(d.year); })
+                .y(function(d) { return y(d.mo_tax); });
+            var pValueline = d3.line()
+                .x(function(d) { return x(d.year); })
+                .y(function(d) { return y(d.p_tax); });
+
+            // make our svg
+            var svg = d3.select(".chart").append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+            // add a title
+            svg.append("text")
+                .attr("class", "chart-title")
+                .attr("x", 0)
+                .attr("y",  0 - (margin.top / 2))
+                .text("Property Tax Rate in Coppell ISD");
+
+
+            // import the data and plot
+            d3.csv("property_tax_rates.csv").then(function(data) {
+
+                // format the data
+                data.forEach(function(d) {
+                    d.year = parseTime(d.year);
+                    d.mo_tax = +d.mo_tax;
+                    d.p_tax = +d.p_tax;
+                });
+
+                // set domains
+                x.domain(d3.extent(data, function(d) { return d.year; }));
+                y.domain([0, d3.max(data, function(d) { return d.p_tax; })]);
+
+
+
+                // add the lines
+                var moLine = svg.append("path")
+                    .data([data])
+                    .attr("class", "line")
+                    .attr("d", moValueline);
+                var moLineArea = svg.append("path")
+                    .data([data])
+                    .style("fill", "#46384180")
+                    .attr("d", moArea);
+
+                var pLine = svg.append("path")
+                    .data([data])
+                    .attr("class", "line")
+                    .attr("d", pValueline);
+                var pLineArea = svg.append("path")
+                    .data([data])
+                    .style("fill", "#46384150")
+                    .attr("d", pArea);
+
+
+                // x axis
+                svg.append("g")
+                    .attr("class", "axis")
+                    .attr("transform", `translate(0, ${height})`)
+                    .call(d3.axisBottom(x));
+                svg.append("text")
+                    .attr("class", "axis-label")
+                    .attr("x", width / 2)
+                    .attr("y", height + margin.top - 10)
+                    .style("text-anchor", "middle")
+                    .text("Year");
+
+                // y axis
+                svg.append("g")
+                    .attr("class", "axis")
+                    .style("font-size", "14px")
+                    .call(d3.axisLeft(y).ticks(4));
+                svg.append("text")
+                    .attr("class", "axis-label")
+                    .attr("transform", "rotate(-90)")
+                    .attr("x", 0 - height / 2)
+                    .attr("y", 0 - margin.left)
+                    .attr("dy", "1em")
+                    .style("text-anchor", "middle")
+                    .text("Tax Rate");
+
+
+                svg.append("text")
+
+
+            });
+            
+
+
+
+        </script>
+
+    </body>
+</html>
