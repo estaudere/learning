@@ -1,1 +1,12 @@
-general budget -> + debt service & food service -> rebind general budget to revenue -> zoom into areas for improvement
+general budget 
+    -> + debt service (35,650,331) & food service (5,350,900) out of 161,545,804 (total general budget)
+    -> rebind debt service to revenue 
+    -> + highlight state aid vs. recapture 
+    -> + zoom into areas of improvement
+
+
+to do
+[ ] make revenue bar
+[ ] make scroller
+[ ] package chart elements into javascript src files
+[ ] 
