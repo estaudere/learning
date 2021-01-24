@@ -36,7 +36,7 @@ I'm hoping to start with 30 Days of Javascript while saving some time to work on
 | 24  | 01.21.21 | data viz | javascript/d3 | [d3 practice](#day-24) |
 | 25  | 01.22.21 | data viz | javascript/d3 | [d3 project](#day-25) |
 | 26  | 01.23.21 | data viz | javascript/d3 | [d3 project](#day-26) |
-| 27  |      |             |             |      |
+| 27  | 01.24.21 | data viz | javascript/d3 | [d3 project](#day-27) |
 | 28  |      |             |             |      |
 | 29  |      |             |             |      |
 | 30  |      |             |             |      |
@@ -350,3 +350,11 @@ Ah! Yes! I started D3 Tips & Tricks for v6 and am loving it! I picked up very ea
 **Enthusiasm:** 🥰
 
 Even more woohoo today! I got the tooltip I wanted!! It looks fantabulous. I feel like a D3 powerhouse, and although I am moving slow, I am confident I can get most of this project done very quickly.
+
+### Day 27
+
+**Focus:** D3 Project
+
+**Enthusiasm:** 😌
+
+Honestly wish I had more time, deadline coming up! I packaged up the charts into a nice set of functions to draw them, and will work on scrollytelling today or tomorrow (soon) 👀
