@@ -24,9 +24,20 @@ body {
     margin: auto;
 }
 
-.chart {
+.tax-chart {
     display: flex;
     justify-content: center;
+}
+
+.budget-charts {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.budget-charts > div {
+    position: relative;
 }
 
 .chart-title {
